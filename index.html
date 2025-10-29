@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Autoplay Video</title>
+</head>
+<body style="margin:0; padding:0;">
+  <video id="intro" src="blinking (1)_5.mp4" autoplay muted playsinline style="width:100vw; height:100vh; object-fit:cover;"></video>
+
+  <script>
+    const video = document.getElementById('intro');
+    video.addEventListener('ended', () => {
+      window.location.href = "https://YOUR_QUESTIONPRO_SURVEY_LINK_HERE";
+    });
+  </script>
+</body>
+</html>
