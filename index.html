@@ -2,15 +2,29 @@
 <html>
 <head>
   <meta charset="UTF-8" />
-  <title>Autoplay Video</title>
+  <title>Video Redirect</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #000;
+    }
+    video {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
 </head>
-<body style="margin:0; padding:0;">
-  <video id="intro" src="blinking (1)_5.mp4" autoplay muted playsinline style="width:100vw; height:100vh; object-fit:cover;"></video>
+<body>
+  <video id="intro" src="blinking (1)_5.mp4" autoplay muted playsinline></video>
 
   <script>
     const video = document.getElementById('intro');
     video.addEventListener('ended', () => {
-      window.location.href = "https://YOUR_QUESTIONPRO_SURVEY_LINK_HERE";
+      window.location.href = "https://unioflincoln.questionpro.eu/t/AB3uyePZB3wCMT";
     });
   </script>
 </body>
