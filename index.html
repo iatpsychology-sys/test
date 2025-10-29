@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8" />
-  <title>Video Redirect</title>
+  <title>Video Back</title>
   <style>
     body {
       margin: 0;
@@ -24,10 +24,14 @@
   <script>
     const video = document.getElementById('intro');
     video.addEventListener('ended', () => {
-     window.location.href = "https://unioflincoln.questionpro.eu/a/TakeSurvey?tt=SESSION_TOKEN#afterVideo";
+      // Go back to the previous page
+      if (document.referrer) {
+        window.history.back();
+      } else {
+        // Fallback if no previous page exists
+        console.log("No previous page in history");
+      }
     });
   </script>
 </body>
 </html>
-
-
